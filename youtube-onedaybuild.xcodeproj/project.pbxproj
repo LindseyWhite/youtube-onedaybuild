@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6827B85624E0EF9600E71CA6 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827B85524E0EF9600E71CA6 /* VideoTableViewCell.swift */; };
 		6869A0A324D7C0E900EF7D90 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869A0A224D7C0E900EF7D90 /* Video.swift */; };
 		6869A0A524D7C16500EF7D90 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869A0A424D7C16500EF7D90 /* Model.swift */; };
-		687EF84B24DE59E600CDB7B7 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */; };
+		68A24D4924E0FCF000CBDD10 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A24D4824E0FCF000CBDD10 /* CacheManager.swift */; };
+		68A24D4A24E0FEC300CBDD10 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */; };
 		68B9828124DBBF3B00DBBEAD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9828024DBBF3B00DBBEAD /* Response.swift */; };
 		68DA584224C4EEC90022178F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA584124C4EEC90022178F /* AppDelegate.swift */; };
 		68DA584424C4EEC90022178F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA584324C4EEC90022178F /* ViewController.swift */; };
@@ -19,10 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6869A0A024D7770A00EF7D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6827B85524E0EF9600E71CA6 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		6869A0A024D7770A00EF7D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		6869A0A224D7C0E900EF7D90 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		6869A0A424D7C16500EF7D90 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
+		68A24D4824E0FCF000CBDD10 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		68B9828024DBBF3B00DBBEAD /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		68DA583E24C4EEC90022178F /* youtube-onedaybuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youtube-onedaybuild.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DA584124C4EEC90022178F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6827B85724E0EFE400E71CA6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6869A0A024D7770A00EF7D90 /* Constants.swift */,
+				687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */,
+				68A24D4824E0FCF000CBDD10 /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6827B85924E0EFFA00E71CA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6869A0A224D7C0E900EF7D90 /* Video.swift */,
+				6869A0A424D7C16500EF7D90 /* Model.swift */,
+				68B9828024DBBF3B00DBBEAD /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6827B85A24E0F00400E71CA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6827B85524E0EF9600E71CA6 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6827B85B24E0F00900E71CA6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68DA584324C4EEC90022178F /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6827B85C24E0F01B00E71CA6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				68DA584524C4EEC90022178F /* Main.storyboard */,
+				68DA584A24C4EECA0022178F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		68DA583524C4EEC90022178F = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +113,13 @@
 			isa = PBXGroup;
 			children = (
 				68DA584124C4EEC90022178F /* AppDelegate.swift */,
-				68DA584324C4EEC90022178F /* ViewController.swift */,
-				68DA584524C4EEC90022178F /* Main.storyboard */,
+				6827B85C24E0F01B00E71CA6 /* Storyboards */,
+				6827B85B24E0F00900E71CA6 /* View Controllers */,
+				6827B85A24E0F00400E71CA6 /* Views */,
+				6827B85924E0EFFA00E71CA6 /* Models */,
+				6827B85724E0EFE400E71CA6 /* Helpers */,
 				68DA584824C4EECA0022178F /* Assets.xcassets */,
-				68DA584A24C4EECA0022178F /* LaunchScreen.storyboard */,
 				68DA584D24C4EECA0022178F /* Info.plist */,
-				6869A0A024D7770A00EF7D90 /* Constants.swift */,
-				6869A0A224D7C0E900EF7D90 /* Video.swift */,
-				6869A0A424D7C16500EF7D90 /* Model.swift */,
-				68B9828024DBBF3B00DBBEAD /* Response.swift */,
-				687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */,
 			);
 			path = "youtube-onedaybuild";
 			sourceTree = "<group>";
@@ -149,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687EF84B24DE59E600CDB7B7 /* ConstantsTemplate.swift in Sources */,
+				68A24D4A24E0FEC300CBDD10 /* ConstantsTemplate.swift in Sources */,
 				6869A0A524D7C16500EF7D90 /* Model.swift in Sources */,
+				6827B85624E0EF9600E71CA6 /* VideoTableViewCell.swift in Sources */,
 				68DA584424C4EEC90022178F /* ViewController.swift in Sources */,
+				68A24D4924E0FCF000CBDD10 /* CacheManager.swift in Sources */,
 				6869A0A324D7C0E900EF7D90 /* Video.swift in Sources */,
 				68DA584224C4EEC90022178F /* AppDelegate.swift in Sources */,
 				68B9828124DBBF3B00DBBEAD /* Response.swift in Sources */,
