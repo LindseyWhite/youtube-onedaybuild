@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6827B85624E0EF9600E71CA6 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827B85524E0EF9600E71CA6 /* VideoTableViewCell.swift */; };
+		6836C88E24E25FA600ACB391 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6836C88D24E25FA600ACB391 /* WebKit.framework */; };
+		6836C88F24E261AF00ACB391 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */; };
+		684830DE24E256C000412621 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684830DD24E256C000412621 /* DetailViewController.swift */; };
 		6869A0A324D7C0E900EF7D90 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869A0A224D7C0E900EF7D90 /* Video.swift */; };
 		6869A0A524D7C16500EF7D90 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869A0A424D7C16500EF7D90 /* Model.swift */; };
 		68A24D4924E0FCF000CBDD10 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A24D4824E0FCF000CBDD10 /* CacheManager.swift */; };
-		68A24D4A24E0FEC300CBDD10 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EF84A24DE59E600CDB7B7 /* ConstantsTemplate.swift */; };
 		68B9828124DBBF3B00DBBEAD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9828024DBBF3B00DBBEAD /* Response.swift */; };
 		68DA584224C4EEC90022178F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA584124C4EEC90022178F /* AppDelegate.swift */; };
 		68DA584424C4EEC90022178F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA584324C4EEC90022178F /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		6827B85524E0EF9600E71CA6 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		6836C88D24E25FA600ACB391 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		684830DD24E256C000412621 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6869A0A024D7770A00EF7D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		6869A0A224D7C0E900EF7D90 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		6869A0A424D7C16500EF7D90 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6836C88E24E25FA600ACB391 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				68DA584324C4EEC90022178F /* ViewController.swift */,
+				684830DD24E256C000412621 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -93,11 +99,20 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		6836C88C24E25FA600ACB391 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6836C88D24E25FA600ACB391 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68DA583524C4EEC90022178F = {
 			isa = PBXGroup;
 			children = (
 				68DA584024C4EEC90022178F /* youtube-onedaybuild */,
 				68DA583F24C4EEC90022178F /* Products */,
+				6836C88C24E25FA600ACB391 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,7 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A24D4A24E0FEC300CBDD10 /* ConstantsTemplate.swift in Sources */,
+				6836C88F24E261AF00ACB391 /* ConstantsTemplate.swift in Sources */,
+				684830DE24E256C000412621 /* DetailViewController.swift in Sources */,
 				6869A0A524D7C16500EF7D90 /* Model.swift in Sources */,
 				6827B85624E0EF9600E71CA6 /* VideoTableViewCell.swift in Sources */,
 				68DA584424C4EEC90022178F /* ViewController.swift in Sources */,

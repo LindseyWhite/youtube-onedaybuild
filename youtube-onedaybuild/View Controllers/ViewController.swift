@@ -28,6 +28,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         model.getVideos()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard TableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        let selectedVideo = videos[TableView.indexPathForSelectedRow!.row]
+        
+        let detailVC = segue.destination as! DetailViewController
+        
+        detailVC.video = selectedVideo
+    }
+    
     func videosFetched(_ videos: [Video]) {
         self.videos = videos
         TableView.reloadData()
